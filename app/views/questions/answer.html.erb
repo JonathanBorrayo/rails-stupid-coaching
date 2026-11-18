@@ -1,0 +1,15 @@
+<div class="container my-4">
+  <h1>Stupid Coaching</h1>
+
+  <blockquote class="border-start border-5 ps-3 py-2 my-4">
+    <p class="fs-5 mb-2"><%= @question %></p>
+    <p class="fst-italic fs-5 mb-0">&mdash;You</p>
+  </blockquote>
+
+  <blockquote class="coach border-start border-5 ps-3 py-2 my-4">
+    <p class="fs-5 fw-normal mb-2"><%= @answer %></p>
+    <p class="fst-italic fs-5 mb-0">&mdash;Your coach</p>
+  </blockquote>
+
+  <%= link_to "Ask another question", ask_path, class: "btn btn-outline-primary" %>
+</div>
